@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="script" href="script.js">
+    <link rel="stylesheet" href="styles.css">
+    <title>Javascript demonstration</title>
+</head>
+
+<body>
+    <!-- Greeting based on time of day -->
+    <h3>Example 1: Dynamic Greeting</h3>
+    <div id="greeting-output"></div>
+    <!-- Show text when I click button -->
+    <h3>Example 2: Dynamic buttons</h3>
+    <button onclick="setButtonText()"> Click Me </button>
+    <div id="button-click-text"></div>
+
+    <h3>Example 3: Date button</h3>
+    <button onclick="displayDateTime()">What's the date and time?</button>
+    <div id="date-time-text"></div>
+
+    <h3>Example 4: Numeric sum finder</h3>
+    <label for="Number-1">Number 1: </label><input class="text-box" type="number" id="Number-1" name="Number-1" required
+        placeholder="0">
+    <br>
+    <label for="Number-2">Number 2: </label><input class="text-box" type="number" id="Number-2" name="Number-2" required
+        placeholder="0">
+    <br>
+    <button onclick="findSum()">Find Sum!</button>
+    <div id="sum-display"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
