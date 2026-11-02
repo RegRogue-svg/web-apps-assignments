@@ -12,42 +12,63 @@
 <body>
     <!-- Greeting based on time of day -->
     <h3>Example 1: Dynamic Greeting</h3>
+    <!-- output div -->
     <div id="greeting-output"></div>
+
     <!-- Show text when I click button -->
     <h3>Example 2: Dynamic buttons</h3>
+    <!-- button that calls a JS function using the onclick attribute-->
     <button onclick="setButtonText()"> Click Me </button>
+    <!-- output div -->
     <div id="button-click-text"></div>
 
+    <!-- Shows a formatted date -->
     <h3>Example 3: Date button</h3>
     <button onclick="displayDateTime()">What's the date and time?</button>
+    <!-- output div -->
     <div id="date-time-text"></div>
 
+    <!-- Finds the sum of 2 numbers -->
     <h3>Example 4: Numeric sum finder</h3>
+    <!-- label and input elements with type number to prevent letters except for 'e' for standard notation-->
     <label for="Number-1">Number 1: </label><input class="text-box" type="number" id="Number-1" name="Number-1" required
         placeholder="0">
+    <!-- line breaks for formatting-->
     <br>
     <label for="Number-2">Number 2: </label><input class="text-box" type="number" id="Number-2" name="Number-2" required
         placeholder="0">
     <br>
     <button onclick="findSum()">Find Sum!</button>
+    <!-- output div -->
     <div id="sum-display"></div>
 
+    <!-- Finds the length of an input -->
     <h3>Example 5: JavaScript string length</h3>
     <input class="text-box" id="length-input" required placeholder="Insert string here"><button onclick="findLength()">Find length</button>
+    <!-- output div -->
     <div id="length-display"></div>
 
+    <!-- demonstrates a password hider -->
     <h3>Example 6: Toggle password display</h3>
-    <label>Password: <input class="text-box" id="password-input"></label><label><input type="checkbox" onclick="updatePassword()" id="show-password"> Show Password</label>
+    <!-- An input element encased in a label element, then a input element as a checkbox encased in another label element-->
+    <label>Password: <input class="text-box" id="password-input" type="password"></label><label><input type="checkbox" onclick="updatePassword()" id="show-password"> Show Password</label>
 
+    <!-- Change font size and text color of a string -->
     <h3>Example 7: Change font size/color</h3>
+    <!-- The text that's changing-->
     <h1 id="changing-text">Text</h1>
+    <!-- the button that triggers the change-->
     <button onclick="changeText()">Change text</button>
 
+    <!-- Hides and shows HTML elements -->
     <h3>Example 8: Hide/Show HTML elements</h3>
     <button onclick="toggleDisplay()">Toggle display</button>
+    <!-- instead of referencing the multiple elements in the JS code, I use a div and hide that instead-->
     <div id="display-area">
+        <!-- the elements I would like to hide and show -->
         <h4 id="dissappear-text">Text</h4> <p id="dissappear-paragraph">paragraph</p> <button id="dissappear-button">button</button>
     </div>
+    <!-- links HTML to Javascript-->
     <script src="script.js"></script>
 </body>
 
