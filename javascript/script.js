@@ -37,7 +37,7 @@ function findSum() {
 function findLength() {
     let input = document.getElementById("length-input").value;
     let length = input.length;
-    document.getElementById("length-display").textContent = "\""+input+"\" has "+length+" characters";
+    document.getElementById("length-display").textContent = "\"" + input + "\" has " + length + " characters";
 }
 function updatePassword() {
     let showPassword = document.getElementById("show-password").checked;
@@ -53,13 +53,20 @@ function changeText() {
     let red = Math.floor(Math.random() * (256));
     let blue = Math.floor(Math.random() * (256));
     let green = Math.floor(Math.random() * (256));
-    let fontSize = Math.floor(Math.random() * 300)+1;
+    let fontSize = Math.floor(Math.random() * 300) + 1;
     let text = document.getElementById("changing-text");
     text.style.color = `rgb(${red} ${blue} ${green})`;
     text.style.fontSize = `${fontSize}px`;
 }
+let display = true
 function toggleDisplay() {
-    
+    display = !display;
+    if (display) {
+        document.getElementById("display-area").hidden = false;
+    }
+    else {
+        document.getElementById("display-area").hidden = true;
+    }
 }
 window.onload = function () {
     setGreeting();
